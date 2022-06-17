@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+        <title>Ecran d'accueil</title>
+        <meta charset="utf-8">
+        <meta http equiv="X-UA Compatible" content="IE-edge">
+        <meta name="viewport" width=device-width, initial-scale="1.O">
+        <link rel="stlylesheet" href="style.css">
+        <link href="./bootstrap-5/css/bootstrap.min.css" rel="stylesheet">
+        <script src="./bootstrap-5/js/bootstrap.bundle.min.js"></script>
+        <style>
+          table, th, td {
+            border: 2px solid rgb(3, 3, 3);
+            border-collapse: collapse;
+            }
+            
+            tr:nth-child(even) {
+            background-color: rgb(254, 254, 253);
+            }
+            
+            th:nth-child(even),td:nth-child(even) {
+            background-color: rgb(254, 254, 254);
+            }
+      
+  </style>
+</head>
+
+<body>
+  
+  <div class="row">
+    <div background="images/imageback.jpg" alt="imagebackgr"></div>
+    <div class="col bg-white text-white"><img src="./images/logocnam.jpg"  alt="Logo"></div>
+    <div class="col bg-white text-white"><img src="./images/bienvenue.jpg" class="rounded-circle" alt="Logo" width="30%" height="80%" alt="Logo"></div>
+    <div class="col bg-white text-white">            <!--weather widget start --><div id="m-booked-prime-93472"> <div class="booked-wzsp-prime-in"> <div class="booked-wzsp-prime-data"> <div class="booked-wzsp-prime-img wt06"></div> <div class="booked-wzsp-day-val"> <div class="booked-wzsp-day-number"><span class="plus">+</span>28</div> <div class="booked-wzsp-day-dergee"> <div class="booked-wzsp-day-dergee-val">&deg;</div> <div class="booked-wzsp-day-dergee-name">C</div> </div> </div> </div> </div> </div> </div><script type="text/javascript"> var css_file=document.createElement("link"); var widgetUrl = location.href; css_file.setAttribute("rel","stylesheet"); css_file.setAttribute("type","text/css"); css_file.setAttribute("href",'https://s.bookcdn.com/css/w/booked-wzs-widget-prime.css?v=0.0.1'); document.getElementsByTagName("head")[0].appendChild(css_file); function setWidgetData_93472(data) { if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = document.getElementById('m-booked-prime-93472'); if(objMainBlock !== null) { var copyBlock = document.getElementById('m-bookew-weather-copy-'+data.results[i].widget_type); objMainBlock.innerHTML = data.results[i].html_code; if(copyBlock !== null) objMainBlock.appendChild(copyBlock); } } } else { alert('data=undefined||data.results is empty'); } } var widgetSrc = "https://widgets.booked.net/weather/info?action=get_weather_info;ver=7;cityID=19417;type=5;scode=2;ltid=3457;domid=581;anc_id=26304;countday=undefined;cmetric=1;wlangID=3;color=137AE9;wwidth=250;header_color=ffffff;text_color=333333;link_color=08488D;border_form=1;footer_color=ffffff;footer_text_color=333333;transparent=0;v=0.0.1";widgetSrc += ';ref=' + widgetUrl;widgetSrc += ';rand_id=93472';var weatherBookedScript = document.createElement("script"); weatherBookedScript.setAttribute("type", "text/javascript"); weatherBookedScript.src = widgetSrc; document.body.appendChild(weatherBookedScript) </script><!-- weather widget end --></div>
+  </div>
+    <div class="col bg-white text-white"> <div class="d-flex justify-content-end bg-white mb-3">
+      <div class="p-2 bg-white"><script type="text/javascript"> 
+    function refresh(){var t = 1000; // rafraîchissement en millisecondes
+        setTimeout('showDate()',t)
+    }
+    
+    function showDate() {
+        var date = new Date()
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        if( h < 10 ){ h = '0' + h; }
+        if( m < 10 ){ m = '0' + m; }
+        if( s < 10 ){ s = '0' + s; }
+        var time = h + ':' + m + ':' + s
+        document.getElementById('horloge').innerHTML = time;
+        refresh();
+     }
+ </script>
+<body onload=showDate();>
+ <span id='horloge' style="background-color:#fff;color: #000;font-size:40px;"></span></div></div>
+  </div> 
+    </div>
+
+    <h2>Emplois du temps<br>Semaine du 12/06/2022 au 17/06/2022</h2>
+    <body background="images/imageback.jpg" alt="imagebackgr">
+<table style="width:100%">
+<tr>
+  <th>BAC+1 Intégrateur Web</th>
+  <th>LUNDI</th>
+  <th>MARDI</th>
+  <th>MERCREDI</th>
+  <th>JEUDI</th>
+  <th>VENDREDI</th>
+
+  <th>Licence Informatique</th>
+  <th>LUNDI</th>
+  <th>MARDI</th>
+  <th>MERCREDI</th>
+  <th>JEUDI</th>
+  <th>VENDREDI</th>
+
+  <th>Licence CVM</th>
+  <th>LUNDI</th>
+  <th>MARDI</th>
+  <th>MERCREDI</th>
+  <th>JEUDI</th>
+  <th>VENDREDI</th>
+  
+</tr>
+<tr>
+  <th>09h00-12h30</th><!--Cours Matin Bac Intégrateur Web-->
+  <td>Anglais<br>Salle Jean-Ferrat</td>
+  <td>Mathématique<br>Salle Jean-Ferrat</td>
+  <td>Algo JavaScript<br>Salle Jean-Ferrat</td>
+  <td>HTML/CSS<br>Salle Jean-Ferrat</td>
+  <td>Graphisme<br>Salle Jean-Ferrat</td>
+
+  <th>09h00-12h30</th><!--Cours Matin Licence Informatique-->
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>Anglais<br>Salle 12</td>
+  <td>Système d'exploitation<br>Amphithéatre</td>
+
+  <th>09h00-12h30</th><!--Cours Matin Licence Compatabilité Vente Marketing-->
+  <td></td>
+  <td>ANGLAIS <br>Salle Jean-Ferrat</td>
+  <td>Comptabilité approfondie de l'entreprise<br>Salle Germelle</td>
+  <td>Comptabilité approfondie de l'entreprise<br>Salle Germelle</td></td>
+  <td>Gestion relation client<br>Salle Jean Ferrat</td></td></td>
+  <td>Droit Fiscal<br>Salle Jean Ferrat</td>
+
+  
+</tr>
+<tr>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+
+</tr>
+<tr>
+  <th>13h30-17h00</th><!--Cours Après-Midi Bac Intégrateur Web-->
+  <td>MATHEMATIQUE<br>Salle 112</td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+
+  <th>13h30-17h00</th><!--Cours Après-Midi Licence Informatique-->
+  <td>MATHEMATIQUE<br>Salle 112</td>
+  <td> </td>
+  <td> </td>
+  <td>Anglais<br>Salle 12</td>
+  <td>Anglais<br>Salle 12</td>
+
+
+  <th>13h30-17h00</th><!--Cours Matin Licence Commerce Vente Marketing-->
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td>Gestion relation client</br>Salle Jean Ferrat</td>
+  <td>Gestion relation client</br>Salle Jean Ferrat</td>
+  
+</tr>
+<tr>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  
+</tr>
+
+
+</table>
+<table>
+<table style="margin-top: 10px; width: 100%">
+
+<tr>
+<th>Licence CCA</th>
+<th>LUNDI</th>
+<th>MARDI</th>
+<th>MERCREDI</th>
+<th>JEUDI</th>
+<th>VENDREDI</th>
+
+<th>Master 1 <br>Marketing Digital</th>
+<th>LUNDI</th>
+<th>MARDI</th>
+<th>MERCREDI</th>
+<th>JEUDI</th>
+<th>VENDREDI</th>
+
+<th>Master 2 <br>Marketing Digital</th>
+<th>LUNDI</th>
+<th>MARDI</th>
+<th>MERCREDI</th>
+<th>JEUDI</th>
+<th>VENDREDI</th>
+
+</tr>
+<tr>
+<th>09h00-12h30</th><!--Cours Matin Licence Comptabilite Audit (cca)  -->
+<td>ANGLAIS<br>Salle Jean-Ferrat</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+
+<th>09h00-12h30</th><!--Cours Matin Master 1 Marketing dIGITAL-->
+<td>ANGLAIS <br>Salle Jean-Ferrat</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+
+<th>09h00-12h30</th><!--Cours Matin Master 2 Marketing dIGITAL-->
+<td>ANGLAIS <br>Salle Jean-Ferrat</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+
+
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+
+</tr>
+<tr>
+<th>13h30-17h00</th><!--Cours Après-Midi Licence Comptabilite Audit (cca)  -->
+<td>MATHEMATIQUE<br>Salle 112</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+
+
+<th>13h30-17h00</th><!--Cours Après-Midi Master 1 Marketing dIGITAL-->
+<td>MATHEMATIQUE<br>Salle 112</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+
+<th>13h30-17h00</th><!--Cours Après-Midi Master 2 Marketing dIGITAL-->
+<td>MATHEMATIQUE<br>Salle 112</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+
+
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+
+</tr>
+
+
+</table>
+
+
+
+</div> 
+</body>
+
+</html>
